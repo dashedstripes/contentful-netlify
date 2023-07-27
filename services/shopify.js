@@ -33,8 +33,8 @@ export async function fetchProducts() {
     })
     const json = await req.json();
 
-    console.log(json)
-    console.log(JSON.stringify(json.data.products.edges))
+    // console.log(json)
+    // console.log(JSON.stringify(json.data.products.edges))
 
     return json.data.products.edges || []
   } catch (error) {
